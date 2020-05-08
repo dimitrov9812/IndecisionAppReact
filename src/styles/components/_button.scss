@@ -1,0 +1,51 @@
+.big-button{
+    color:white;
+    padding: $m-size;
+    font-size: $big-size;
+    font-variant-caps: all-petite-caps;
+    font-weight: bolder;
+    background: $purple;
+    border: none;
+    border-bottom: 0.6rem solid darken($purple,10%);
+    width: 100%;
+    margin-bottom: $very-big-size;
+}
+.big-button:hover{
+    background: darken($purple,10%);
+    border: none;
+    border-bottom: 0.6rem solid darken($purple,20%);
+}
+
+.big-button:disabled{
+    opacity: .5;
+}
+
+//style for the addoption button
+.button{
+    background-color: $purple;
+    border: none;
+    border-bottom: 0.3rem solid darken($purple,10%);
+    color:white;
+    padding: $s-size;
+    font-size: $m-size;
+    font-variant-caps: all-petite-caps;
+    font-weight: bolder;
+} 
+
+.button--link{
+    background: none;
+    border: none;
+    color: $off-white;
+    padding: 0;
+}
+
+//=======Challenge=======
+//reduce the spacing from very big to small when on smaller devices
+
+@media (max-width: $desktop-breakpoint){
+    .button, .big-button{
+        margin-bottom: $s-size;
+        margin-top: -6%;
+    }
+  }
+
